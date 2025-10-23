@@ -8,6 +8,10 @@
   scroll-behavior: smooth;
 }
 
+.userImageSize{
+  width: 100%;
+}
+
 #wrapper{
   height: 100vh;
   overflow-x: hidden;
@@ -56,11 +60,11 @@ a{
 .nav-right div{
   font-size:20px;
   font-weight:500;
-  cursor:pointer; 
+  cursor:pointer;
 }
 .nav-right div:hover{
   transition: 0.7s;
-  font-weight: 800; 
+  font-weight: 800;
 }
 
 .hero{
@@ -78,7 +82,7 @@ a{
   user-select:none;
   font-size: 7em;
   color:rgb(231,231,231);
-  
+
   bottom: -16%;
   left: -5%;
   font-weight: bold;
@@ -88,7 +92,7 @@ a{
   width: 100%;
   display: flex;
    flex-direction: column;
-  justify-content: center; 
+  justify-content: center;
   gap:2rem;
 }
 
@@ -157,7 +161,7 @@ a{
   padding: 2.5rem;
   filter: grayscale(0);
   transition: all 1s;
-  
+
   animation: scaleImage 5s linear infinite;
 }
 
@@ -187,7 +191,7 @@ a{
 }
 
 @keyframes circleGo {
- 
+
   50%{
     bottom: 10%;
     left: 5%;
@@ -309,15 +313,15 @@ z-index: 0;
 
 }
 #project-1{
-  background-image: url(./images/projects/Project1.png);
+  background-image: url(./images/projects/job-portal.jpg);
   margin-right: 100px;
 }
 #project-2{
-  background-image: url(./images/projects/Project2.png);
+  background-image: url(./images/projects/next-notes.jpg);
   margin-left: 100px;
 }
 #project-3{
-  background-image: url(./images/projects/Project3.png);
+  background-image: url(./images/projects/weather-app.jpg);
   margin-right: 100px;
 }
 #project-4{
@@ -370,7 +374,7 @@ transition: all 0.5s;
   padding: 2em;
   gap: 1em;
   transition: all 0.5s;
-  
+
 }
 .project-content-left{
   left: 10%;
@@ -592,3 +596,13 @@ footer{
   display: flex;
   gap: 1rem;
 }
+
+
+/*// responsive design*/
+
+  @media (max-width: 1000px){
+    .hero{
+      display: flex;
+      flex-direction: column !important;
+    }
+  }
